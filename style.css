@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./image/background.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Header Style */
+
+#header__wrapper {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 2px solid orange;
+    display: flex;
+    align-items: center;
+}
+
+#header__logo img {
+    width: 300px;
+    margin-left: 100px;
+}
+
+
+/* Main Style */
+
+#main__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#main__tranfer {
+    width: 270px;
+    height: 310px;
+    background: #fff;
+}
+
+#main__transcations {
+    width: 620px;
+    height: 620px;
+    background: #fff;
+}
+
+@media screen and (max-width: 770px) {
+    #header__logo img {
+        margin-left: 50px;
+    }
+    #main__wrapper {
+        display: block;
+    }
+    #main__tranfer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #main__transcations {
+        width: 100%;
+        height: 640px;
+    }
+}
+
+
+/* Make Tranfer */
+
+.title {
+    width: 100%;
+    height: 40px;
+    background: #1C9AA3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.title p {
+    display: inline-block;
+}
+
+.title div {
+    position: absolute;
+    display: flex;
+}
+
+.main__tranfer__form {
+    margin: 20px 20px;
+}
+
+.main__tranfer__form form div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.main__tranfer__form label {
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.main__tranfer__form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 10px 0;
+}
+
+.main__tranfer__form input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+    color: #fff;
+}
+
+.main__tranfer__form input:focus {
+    outline: 0;
+}
+
+
+/* Recent Transactions */
+
+
+/* Search and Sort */
+
+.main__transcations__list__search form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main__transcations__list__search form p {
+    font-size: 10px;
+    font-weight: bold;
+    align-self: center;
+}
+
+#search {
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 770px) {
+    .main__transcations__list__search form {
+        display: block;
+    }
+}
+
+.main__transcations__list__search .button {
+    display: flex;
+}
+
+.main__transcations__list__search .button input {
+    width: 100%;
+    text-align: center;
+    padding: 2px 10px;
+    border-radius: 0;
+    border: 1px solid grey;
+    border-right: none;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.main__transcations__list__search input:focus {
+    outline: 0;
+}
+
+.main__transcations__list__search .button input:last-child {
+    border: 1px solid grey;
+}
+
+
+/* List transcations */
+
+.main__transcations__list__history {
+    margin: 20px;
+}
+
+.main__transcations__list__history .single__history:last-child {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.single__history {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-left: 5px solid red;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.single__history__description {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.single__history__description img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    margin: 20px;
+}
+
+.single__history__description__date {
+    align-self: center;
+    margin: 10px;
+    font-size: 12px;
+    color: grey;
+}
+
+.single__history__description div {
+    align-self: center;
+}
+
+.single__history__description__name {
+    font-weight: bold;
+}
+
+.single__history__description__payment {
+    font-size: 12px;
+}
+
+.single__history__amount {
+    font-weight: bold;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peachtree Bank</title>
+    <!-- Section import -->
+    <!-- CSS import -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome import -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Header Wrapper -->
+    <header>
+        <div id="header__wrapper">
+            <div id="header__logo">
+                <img src="./image/logo.jpg">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <main>
+        <div id="main__wrapper">
+            <!-- Make Tranfer -->
+            <div id="main__tranfer">
+                <div class="main__tranfer__title title">
+                    <div>
+                        <i class="fas fa-reply"></i>
+                    </div>
+                    <p>Make a Tranfer</p>
+                </div>
+
+                <div class="main__tranfer__form">
+                    <form action="#" target="_blank" method="POST">
+                        <label for="from">FROM ACCOUNT</label>
+                        <input type="text" name="from" id="from" placeholder="Free Checking(4692) - $5824.76">
+                        <label for="to">TO ACCOUNT</label>
+                        <input type="text" name="to" id="to" placeholder="Georgia Power Electric Company">
+                        <label for="amount">AMOUNT</label>
+                        <input type="number" name="amount" id="amount" placeholder="$ 0.00">
+                        <div>
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div id="main__transcations">
+                <div class="main__transcations__title title">
+                    <div>
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p>Recent Transactions</p>
+                </div>
+
+                <div class="main__transcations__list">
+                    <!-- Search and Sort -->
+                    <div class="main__transcations__list__search">
+                        <form action="#" target="_self" method="POST">
+                            <input type="search" id="search" placeholder="Search by typing...">
+                            <p>Sort by</p>
+                            <div class="button">
+                                <input type="button" value="DATE">
+                                <input type="button" value="BENEFICIARY">
+                                <input type="button" value="AMOUNT">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- List transcations -->
+                    <div class="main__transcations__list__history">
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 19</p>
+                                <img src="./image/icons/the-tea-lounge.png">
+                                <div>
+                                    <p class="single__history__description__name">The Tea Lounge</p>
+                                    <p class="single__history__description__payment">Card Payment</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$82.02</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 19</p>
+                                <img src="./image/icons/texaco.png">
+                                <div>
+                                    <p class="single__history__description__name">Texaco</p>
+                                    <p class="single__history__description__payment">Card Payment</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$84.64</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 18</p>
+                                <img src="./image/icons/the-tea-lounge.png">
+                                <div>
+                                    <p class="single__history__description__name">The Tea Lounge</p>
+                                    <p class="single__history__description__payment">Card Payment</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$84.76</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 18</p>
+                                <img src="./image/icons/amazon-online-store.png">
+                                <div>
+                                    <p class="single__history__description__name">Amazon Online Store</p>
+                                    <p class="single__history__description__payment">Online Tranfer</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$22.10</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 18</p>
+                                <img src="./image/icons/7-eleven.png">
+                                <div>
+                                    <p class="single__history__description__name">7-Eleven</p>
+                                    <p class="single__history__description__payment">Card Payment</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$46.25</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 17</p>
+                                <img src="./image/icons/h&m-online-store.png">
+                                <div>
+                                    <p class="single__history__description__name">H&M Online Store</p>
+                                    <p class="single__history__description__payment">Online Tranfer</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$19.72</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 16</p>
+                                <img src="./image/icons/jerry-hildreth.png">
+                                <div>
+                                    <p class="single__history__description__name">JerryHildren</p>
+                                    <p class="single__history__description__payment">Transaction</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$68.87</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 15</p>
+                                <img src="./image/icons/lawrence-pearson.png">
+                                <div>
+                                    <p class="single__history__description__name">Lauwrence Pearson</p>
+                                    <p class="single__history__description__payment">Transaction</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$52.36</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 15</p>
+                                <img src="./image/icons/whole-foods.png">
+                                <div>
+                                    <p class="single__history__description__name">Whole Foods</p>
+                                    <p class="single__history__description__payment">Card Payment</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$75.93</div>
+                        </div>
+
+                        <div class="single__history">
+                            <div class="single__history__description">
+                                <p class="single__history__description__date">Oct. 19</p>
+                                <img src="./image/icons/southern-electric-company.png">
+                                <div>
+                                    <p class="single__history__description__name">Southern Electric Company</p>
+                                    <p class="single__history__description__payment">Online Tranfer</p>
+                                </div>
+                            </div>
+
+                            <div class="single__history__amount">-$142.95</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
